@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {  GetStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 import SubscriberButton from '../components/SubscriberButton'
 
 import styles from '../styles/home.module.scss'
@@ -19,8 +19,8 @@ export default function Home({ product }: HomeProps) {
         <title>Home | Ig.news</title>
       </Head>
 
-     <main className={styles.contentContainer} >
-       <section className={styles.hero} >
+      <main className={styles.contentContainer} >
+        <section className={styles.hero} >
           <span>👏 Hey, welcome</span>
           <h1>News about the <span>React</span> world.</h1>
           <p>
@@ -29,10 +29,10 @@ export default function Home({ product }: HomeProps) {
           </p>
 
           <SubscriberButton priceId={product.priceId} />
-       </section>
+        </section>
 
-       <img src="/images/avatar.svg" alt="Girl coding" />
-     </main>
+        <img src="/images/avatar.svg" alt="Girl coding" />
+      </main>
 
     </>
   )
